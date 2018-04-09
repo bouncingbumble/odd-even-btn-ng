@@ -16,9 +16,7 @@ export class GameControlComponent implements OnInit {
 
   onStartBtnClick(){
     this.interval = setInterval(() => {
-      this.i++;
-      console.log(this.i);
-      this.numberEvent.emit(this.i);
+      this.numberEvent.emit(this.i+1);
     }, 1000);
   }
 
